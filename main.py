@@ -9,10 +9,6 @@ print(len(symbols))
 lower = list(string.ascii_lowercase)
 upper = list(string.ascii_uppercase)
 
-# with open('/opt/rockyou.txt', 'r') as rockyou:
-#rockyou_list = rockyou.readlines()
-# print(rockyou_list)
-
 
 def get_lengths():
     global lengthlower, lengthupper, lengthsymbols
