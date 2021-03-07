@@ -15,9 +15,9 @@ def get_lengths():
     global lengthlower, lengthupper, lengthsymbols
 
     lengthlower = int(input(
-        "Please input the number of lowercase letters in password: "))
+        "Please input the number of lowercase letters in password up to 26: "))
     lengthupper = int(
-        input("Please input the number of uppercase in password: "))
+        input("Please input the number of uppercase in password up to 26: "))
     lengthsymbols = int(input(
         "Please input the number of symbols in the password - up to 7:  "))
 
