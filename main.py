@@ -1,7 +1,10 @@
 import string
 import random
 
-symbols = ['@', '#', '$', '%', '#', '[', ']']
+symbols = ['@', '#', '$', '%', '#', '[', ']', ';', '/' '&',
+           '+', '-', '*' ' <', '>', '!', '?', '{', '}', '^', '_']
+print(len(symbols))
+
 
 lower = list(string.ascii_lowercase)
 upper = list(string.ascii_uppercase)
@@ -14,12 +17,12 @@ upper = list(string.ascii_uppercase)
 def get_lengths():
     global lengthlower, lengthupper, lengthsymbols
 
-    lengthlower = int(input(
-        "Please input the number of lowercase letters in password up to 26: "))
+    lengthlower = input(
+        "Please input the number of lowercase letters in password up to 26: ")
     lengthupper = int(
         input("Please input the number of uppercase in password up to 26: "))
     lengthsymbols = int(input(
-        "Please input the number of symbols in the password - up to 7:  "))
+        "Please input the number of symbols in the password - up to 19:  "))
 
     if lengthlower > 26:
         print('Please select a number lower than 26')
@@ -27,8 +30,8 @@ def get_lengths():
     elif lengthlower > 26:
         print('Please select a number lower than 26')
         get_lengths()
-    elif lengthsymbols > 7:
-        print('Please select a number lower than 7')
+    elif lengthsymbols > 19:
+        print('Please select a number lower than 19')
         get_lengths()
     else:
         pass
